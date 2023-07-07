@@ -25,6 +25,18 @@ def find_similar_word(word) :
                 return similar_words
     return similar_words
 
+def display_results(word, synonyms, example_sentence, similar_words, example_sentences) :
+    print(f"word: {word}")
+    print("synonyms:")
+    if synonyms:
+        for synonym in synonyms:
+            print(f"- {synonym}")
+    else:
+        print("No synonyms found.")
+    print(f"\nExample Sentence: {example_sentence}")
+    print("\nSimilar Words: ")
+    
+    
 if __name__ == '__main__':
     word = input("Enter a word please: ")
 
