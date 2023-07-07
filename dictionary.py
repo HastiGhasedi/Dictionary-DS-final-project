@@ -35,6 +35,10 @@ def display_results(word, synonyms, example_sentence, similar_words, example_sen
         print("No synonyms found.")
     print(f"\nExample Sentence: {example_sentence}")
     print("\nSimilar Words: ")
+    if similar_words:
+        for similar_word, example_sentence in zip(similar_words, example_sentences):
+            print(f"- {similar_word}")
+            print(f"  Example sentence: {example_sentence}")
     
     
 if __name__ == '__main__':
