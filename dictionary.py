@@ -46,7 +46,9 @@ if __name__ == '__main__':
 
     synonyms = find_synonyms(word)
 
-    example_sentence = generate_example_sentence(word)
+    example_sentence= generate_example_sentence(word)
 
-    display_results(word, synonyms, example_sentence)
+    similar_words = find_similar_word(word)
+
+    
     
