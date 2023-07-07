@@ -50,5 +50,8 @@ if __name__ == '__main__':
 
     similar_words = find_similar_word(word)
 
+    example_sentences = [generate_example_sentence(similar_word) for similar_word in similar_words]
+
+    display_results(word, synonyms, example_sentence, similar_words, example_sentences)
     
     
